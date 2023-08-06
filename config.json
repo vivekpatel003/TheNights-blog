@@ -1,0 +1,17 @@
+{
+    "params":
+    {
+        "local_server":"True",
+        "local_uri":"mysql+pymysql://root:@localhost/thenights",
+        "prod_uri":"mysql+pymysql://root:@localhost/thenights",
+        "insta_url":"https://www.instagram.com/vivek___00004/",
+        "github_url":"https://github.com/viv123-12/",
+        "twitter_url":"https://twitter.com/iam_vivek_patel",
+        "gmail_user":"vivekshirinbhai123@gmail.com",
+        "gmail_password":"Vivek@123",
+        "about-text":"Hey this is Vivek Patel, Currently persuing my Btech in computer science and engineering. Placement seasons are going on and this flask fullstack website going well. ",
+        "no_of_posts":1,
+        "admin_name":"vivek",
+        "admin_password":"123"
+    }
+}

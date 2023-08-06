@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/admin.jpeg') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1></h1>
+              <span class="subheading"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+        <h2>Add New Post</h2>
+        <a name="add" id="" class="btn btn-primary" href="/add/0" role="button">ADD</a>
+        <hr>
+        <table class="table">
+          <thead>
+              <tr>
+                <th scope="col">SrNo</th>
+                <th scope="col">Title</th>
+                <th scope="col">Date</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+
+                {% for post in post %}
+                <tr>
+                  <th>{{post.serialNo}}</th>
+                  <td>{{post.title}}</td>
+                  <td>{{post.date}}</td>
+                  <td><a name="" id="" class="btn btn-primary" href="/edit/{{post.serialNo}}" role="button">Edit</a></td>
+                  <td><a name="" id="" class="btn btn-primary" href="/delete/{{post.serialNo}}" role="button">Delete</a></td>
+                </tr>
+                
+                {% endfor %}
+                
+              </tbody>
+            </table>
+            
+            
+            
+            <!-- Pager -->
+            <div class="clearfix">
+              
+             
+              </div>
+          </div>
+      </div>
+    </div>
+      {% endblock %}
